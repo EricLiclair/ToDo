@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html style="font-family: Raleway, sans-serif;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>To Do</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="background: url(&quot;assets/img/avi-richards-Z3ownETsdNQ-unsplash.jpg&quot;) center / cover no-repeat;">
+    <div class="holder">
+        <div class="container" style="background: rgba(255,255,255,0);">
+            <div class="row">
+                <div class="col">
+                    <h1
+                        style="font-family: Raleway, sans-serif;color: rgb(75,55,56);text-align: center;margin-top: 20px;font-size: 60px;">
+                        To Do</h1>
+                </div>
+                <div class="col place-holder">
+                    <div class="position-holder" style="font-size: 18px;">
+                        <input id="task-add" type="text"
+                            style="height: 40px;border-top-left-radius: 35px;border-bottom-left-radius: 35px;width: 200px;background: rgba(255,255,255,0.25);padding: 10px;color: rgb(255,255,255);font-family: Raleway, sans-serif;text-align: left;border-style: none;border-top-right-radius: 0;border-bottom-right-radius: 0;font-size: 16px;"
+                            placeholder="Add a task">
+                        <button id="add-button" class="btn btn-primary add-button" type="button"
+                            style="height: 40px;width: 40px;padding: 0;border-top-right-radius: 35px;border-bottom-right-radius: 35px;background: rgba(255,255,255,0.25);border-style: none;border-top-left-radius: 0;border-bottom-left-radius: 0;"><i
+                                class="material-icons" style="padding: 0px;margin-right: 5px;margin-top: 5px;">add</i>
+                        </button>
+                    </div>
+                </div>
+                <div id="task-viewer" class="col task-viewer">
+                    <div class="task-viewer-div"
+                        style="color: #ffffff;border-radius: 35px;background: rgba(255,255,255,0.25);">
+                        <h6 style="font-family: Raleway, sans-serif;text-align: center;font-size: 18px;">Tasks</h6>
+                        <ol id="task-display" style="font-size: 14px;font-family: Raleway, sans-serif;">
+                            
+                        </ol>
+                    </div>
+                    <h1 class="legend"
+                        style="color: rgb(255,255,255);font-family: Raleway, sans-serif;font-size: 10px;text-align: left;">
+                        click to mark as done<br>double click to delete</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
