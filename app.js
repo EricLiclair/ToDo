@@ -2,6 +2,27 @@ let placeholder = document.getElementById('task-add');
 let addButton = document.getElementById('add-button');
 let taskView = document.getElementById('task-display');
 
+fetch('./trial_data.json')
+.then(function (data) {
+  return data.json();
+})
+.then(function(data) {
+  let CId = data.clientId;
+  let url = "https://api.unsplash.com/photos/?query=black&client_id=" + CId;
+
+  //creating a random value
+  var random = Math.floor(Math.random() * 10);
+
+  //fetch the image url from Unsplash API
+  fetch(url)
+  .then(function(data) {
+    return data.json();
+  })
+  .then(function(data) {
+    let imageSrc = data[random].urls.full;
+    document.getElementById('body').style.backgroundImage="url('" + imageSrc + "')";
+  })
+})
 
 addButton.addEventListener('click', function() {
   if (placeholder.value == "") {
